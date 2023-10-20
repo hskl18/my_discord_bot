@@ -1,0 +1,35 @@
+- name: chat
+  description: Chat with gpt
+  options:
+    - name: message
+      description: your message
+      type: 3 # string
+      required: true
+
+- name: chat_emo
+  description: Translate sentence into emoji
+  options:
+    - name: message
+      description: your sentence
+      type: 3 # string
+      required: true
+      
+- name: chat_multplechoice
+  description: Chat to help you get the multiple choice question right
+  options:
+    - name: question
+      description: whole question with choices
+      type: 3 # string
+      required: true
+  
+- name: chat_custom
+  description: Chat with gpt using custom character set
+  options:
+    - name: task
+      description: give a character set to gpt
+      type: 3 # string
+      required: true
+    - name: message
+      description: your message
+      type: 3 # string
+      required: true
