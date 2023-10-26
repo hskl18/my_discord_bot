@@ -33,3 +33,20 @@
       description: your message
       type: 3 # string
       required: true
+
+- name: image
+  description: Generate image from text
+  options:
+    - name: message
+      description: your message
+      type: 3 # string
+      required: true
+
+#___________________________________________________________________________________________
+# - name: example
+#   description: Generate example from text
+#   options:
+#     - name: message
+#       description: your message
+#       type: 3 # string
+#       required: true

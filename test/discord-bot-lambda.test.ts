@@ -1,17 +1,23 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
-// import * as DiscordBotLambda from '../lib/discord-bot-lambda-stack';
+// Import necessary libraries/modules from AWS CDK and the local directory
+import * as cdk from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import * as DiscordBotLambda from '../lib/discord-bot-lambda-stack';
+import { run } from 'node:test';
 
-// example test. To run these tests, uncomment this file along with the
-// example resource in lib/discord-bot-lambda-stack.ts
+// Define a test to check whether an SQS Queue is created with specified properties
 test('SQS Queue Created', () => {
-//   const app = new cdk.App();
-//     // WHEN
-//   const stack = new DiscordBotLambda.DiscordBotLambdaStack(app, 'MyTestStack');
-//     // THEN
-//   const template = Template.fromStack(stack);
+  // Initializing a new CDK app
+  const app = new cdk.App();
+  
+  // WHEN: Creating a new stack in the app
+  const stack = new DiscordBotLambda.DiscordBotLambdaStack(app, 'MyTestStack');
+  
+  // THEN: Creating a template from the stack
+  const template = Template.fromStack(stack);
 
-//   template.hasResourceProperties('AWS::SQS::Queue', {
-//     VisibilityTimeout: 300
-//   });
+  // Asserting that the template has a resource of type AWS::SQS::Queue with specified properties
+  template.hasResourceProperties('AWS::SQS::Queue', {
+    VisibilityTimeout: 300
+  });
 });
+// run test by running the following command in the terminal: npx jest
