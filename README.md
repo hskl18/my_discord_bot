@@ -2,7 +2,9 @@
 
 Welcome to the repository of a Discord bot that operates seamlessly on AWS Lambda. The bot is proficient in interacting with the OpenAI API, bringing a swift and powerful AI tool right into your Discord server!
 
-![Discord Bot](./github_image/demo.jpg)
+<p align="center">
+  <img src="./github_image/demo.jpg" alt="demo" width="300">
+</p>
 
 ## Add to your Server
 [Discord Bot](https://discord.com/api/oauth2/authorize?client_id=1159000090048991363&permissions=8&scope=bot) <- click here to add to your server
@@ -23,7 +25,9 @@ The bot is comfortably hosted on [AWS Lambda](https://aws.amazon.com/pm/lambda),
 
 Leveraging the [AWS CDK](https://aws.amazon.com/cdk/), the bot is nestled within a Docker container on AWS Lambda. It is paired with an integrated API Gateway, ensuring a fluid and uninterrupted user experience. The bot also uses [SQS](https://aws.amazon.com/sqs/) to smartly auto-scale, avoiding any potential failures or disruptions.
 
-![Handle multiple comand](./github_image/handle.jpg)
+<p align="center">
+  <img src="./github_image/handle.jpg" alt="Handle multi Command" width="300">
+</p>
 
 ## Setup
 
