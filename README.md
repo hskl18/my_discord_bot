@@ -1,6 +1,6 @@
 # My Discord Bot on AWS Lambda
 
-Welcome to the repository of a Discord bot that operates seamlessly on AWS Lambda. The bot is proficient in interacting with the OpenAI API, bringing a swift and powerful AI tool right into your Discord server!
+Welcome to the repository of a Discord bot that operates seamlessly on AWS Lambda which it's almost free. The bot is proficient in interacting with the OpenAI API, bringing a swift and powerful AI tool right into your Discord server!
 
 <p align="center">
   <img src="./github_image/demo.jpg" alt="demo" width="300">
