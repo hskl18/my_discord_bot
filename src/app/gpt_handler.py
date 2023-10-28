@@ -18,8 +18,11 @@ def GPT(data, command_name, user_message, interaction_token):
     )
 
     print(response)
-    usage = response['usage']
-    message_content = response['choices'][0]['message']['content'] + f"\n\nUsage: {usage}"
+    # usage = response['usage']
+    # + f"\n\nUsage: {usage}"
+    # save for the show usage command
+    
+    message_content = response['choices'][0]['message']['content']
     
     # Truncate the response if it's too long
     if len(message_content) > 3000:

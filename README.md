@@ -2,8 +2,12 @@
 
 Welcome to the repository of a Discord bot that operates seamlessly on AWS Lambda. The bot is proficient in interacting with the OpenAI API, bringing a swift and powerful AI tool right into your Discord server!
 
+![Discord Bot](./github_image/demo.jpg)
+
 ## Add to your Server
 [Discord Bot](https://discord.com/api/oauth2/authorize?client_id=1159000090048991363&permissions=8&scope=bot) <- click here to add to your server
+
+![Commands](./github_image/function.jpg)
 
 Commands:
 - `/chat <message>`: Chat with the bot
@@ -18,6 +22,8 @@ Commands:
 The bot is comfortably hosted on [AWS Lambda](https://aws.amazon.com/pm/lambda), employing the [Discord Interactions Endpoint](https://discord.com/developers/docs/interactions/application-commands) to gracefully handle user commands within a Discord server. The backbone is crafted using [Flask](https://flask.palletsprojects.com/) to manage the HTTP server functionalities.
 
 Leveraging the [AWS CDK](https://aws.amazon.com/cdk/), the bot is nestled within a Docker container on AWS Lambda. It is paired with an integrated API Gateway, ensuring a fluid and uninterrupted user experience. The bot also uses [SQS](https://aws.amazon.com/sqs/) to smartly auto-scale, avoiding any potential failures or disruptions.
+
+![Handle multiple comand](./github_image/handle.jpg)
 
 ## Setup
 
@@ -79,8 +85,8 @@ Leveraging the [AWS CDK](https://aws.amazon.com/cdk/), the bot is nestled within
 
 ### Deploying to AWS Lambda
 
-- Once all tokens and keys are meticulously updated, you are set to unveil your bot on AWS Lambda.
-- Post-deployment, an API endpoint resembling `https://xxxxx.execute-api.us-east-1.amazonaws.com/prod/` will be unveiled.
+- Once all tokens and keys are meticulously updated, you are set to expose your bot on AWS Lambda.
+- Post-deployment, an API endpoint resembling `https://xxxxx.execute-api.us-east-1.amazonaws.com/prod/` will be exposed.
 - Propel your Discord application’s interactions endpoint to synchronize with this newfound URL on your [Discord Developer Portal](https://discord.com/developers/applications).
 - Prioritize bootstrapping the CDK if it hasn’t been addressed already:
     ```sh
